@@ -1,0 +1,43 @@
+.video-section {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Ajuste según necesidad */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Oscurece un poco el video */
+  padding-left: 3em;
+}
+
+.video-title {
+  color: #fff;
+  font-size: 3em;
+  text-align: left;
+  text-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: -100px;
+  z-index: 2;
+}

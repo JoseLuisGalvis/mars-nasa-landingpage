@@ -1,0 +1,50 @@
+/* components/Footer.css */
+.footer {
+  color: white;
+  padding: 1rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer a {
+  color: #3498db;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Redes sociales */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icons a:hover svg {
+  filter: drop-shadow(0 8px 12px rgba(255, 255, 255, 0.7));
+  transform: scale(1.2);
+}

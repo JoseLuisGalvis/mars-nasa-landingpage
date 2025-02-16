@@ -1,0 +1,19 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dark-mode {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.dark-mode .gallery-grid {
+  background-color: #222 !important;
+}
+
+.dark-mode .image-info {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}

@@ -1,0 +1,97 @@
+/* AboutMars.css */
+/* AboutMars.css */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column; /* Por defecto en columna para móviles */
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.about-image {
+  width: 100%; /* Imagen a todo el ancho en móviles */
+  height: 50vh; /* Altura reducida para móviles */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px; /* Espacio entre imagen y texto */
+}
+
+.about-text {
+  width: 100%; /* Texto a todo el ancho en móviles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-text h2 {
+  font-size: 1.8rem; /* Tamaño más pequeño para móviles */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1.1rem; /* Tamaño más pequeño para móviles */
+  line-height: 1.5;
+}
+
+.btn-back {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.btn-back:hover {
+  background-color: #000000 !important;
+  color: white;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5);
+  transform: translateZ(30px);
+}
+
+/* Diseño para tablets y desktop */
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row; /* Cambia a fila en pantallas más grandes */
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .about-image {
+    width: 50%;
+    height: 100vh;
+    margin-bottom: 0; /* Elimina el margen inferior */
+  }
+
+  .about-text {
+    width: 50%;
+    padding: 40px;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1.2rem;
+  }
+}
